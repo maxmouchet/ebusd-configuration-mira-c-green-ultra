@@ -1,0 +1,10 @@
+name: Validate
+
+on: [push]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: docker run -v $(pwd):/config john30/ebusd --configpath=/config --checkconfig
