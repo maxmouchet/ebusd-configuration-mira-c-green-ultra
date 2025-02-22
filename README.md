@@ -10,8 +10,9 @@ While these configurations are mostly functionals, some fields are different on 
 Example usage with an [eBUS Adapter Shield C6](https://adapter.ebusd.eu/v5-c6/index.en.html) in the default [enhanced mode](https://github.com/john30/ebusd/blob/master/docs/enhanced_proto.md):
 
 ```bash
-# Replace x.x.x.x with the adapter IP address
-ebusd --configpath=. --device=ens:x.x.x.x --foreground --latency=10
+# 1. Replace x.x.x.x with the adapter IP address
+# 2. Remove the --readonly flag only if you know what you're doing
+ebusd --configpath=. --device=ens:x.x.x.x --foreground --latency=10 --readonly
 # received update-read boiler dhw_temperature QQ=37: 55.0
 # received update-read boiler z1_fixed_temperature QQ=37: 35.0
 # received update-read boiler boiler_status QQ=37: standby
