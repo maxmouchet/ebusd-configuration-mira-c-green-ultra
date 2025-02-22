@@ -55,7 +55,7 @@ b,boiler,z6_sra_offset,,,fe,200e,6476,,,temperature
 b,boiler,z6_fixed_temperature,,,fe,200e,6576,,,temperature
 
 # MSB(ID)=81
-b,boiler,z1_heat_temp_range,menu=420,,fe,200f,0081,,,BCD,0=low_temperature;1=high_temperature
+b,boiler,z1_installation_type,menu=420,,fe,200f,0081,,,BCD,0=low_temperature;1=high_temperature
 
 # MSB(ID)=d1
 r,boiler,burner_hours_heating,menu=810,,3c,2000,4bd1,,,IGN:1,,,,,,UIN,,hours
