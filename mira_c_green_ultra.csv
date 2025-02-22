@@ -1,3 +1,7 @@
+# MSB(ID)=10
+r,boiler,water_temperature_out,menu=831,,3c,2000,6810,,,IGN:1,,,,,,temperature
+r,boiler,water_temperature_in,menu=832,,3c,2000,6910,,,IGN:1,,,,,,temperature
+
 # MSB(ID)=18
 b,boiler,room_temperature,,,fe,200f,7118,,,temperature
 
@@ -52,3 +56,4 @@ b,boiler,z6_fixed_temperature,,,fe,200e,6576,,,temperature
 
 # MSB(ID)=81
 b,boiler,z1_heat_temp_range,menu=420,,fe,200f,0081,,,BCD,0=low_temperature;1=high_temperature
+
