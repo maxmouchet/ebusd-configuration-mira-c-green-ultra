@@ -1,4 +1,4 @@
-# [eBUSd](https://github.com/john30/ebusd) configuration for the Chaffoteaux Mira C Green Ultra boiler
+# Mira C Green Ultra [eBUSd](https://github.com/john30/ebusd) configuration
 
 Adapted from the great work of [ysard](https://github.com/ysard/ebusd_configuration_chaffoteaux_bridgenet) and [wrongisthenewright](https://github.com/wrongisthenewright/ebusd-configuration-ariston-bridgenet).
 
