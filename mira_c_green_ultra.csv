@@ -1,0 +1,54 @@
+# MSB(ID)=18
+b,boiler,room_temperature,,,fe,200f,7118,,,temperature
+
+# MSB(ID)=20
+b,boiler,heating_status,,,fe,200f,0120,,,onoff
+w,boiler,heating_status,,,fe,2020,0120,,,onoff
+b,boiler,dhw_status,,,fe,200f,0220,,,onoff
+w,boiler,dhw_status,,,fe,2020,0220,,,onoff
+b,boiler,sra_status,menu=224,,fe,200f,0520,,,onoff
+w,boiler,sra_status,menu=224,,fe,2020,0520,,,onoff
+
+# MSB(ID)=26
+b,boiler,dhw_temperature,,,fe,200e,6126,,,temperature
+w,boiler,dhw_temperature,,,fe,2020,6126,,,temperature
+
+# MSB(ID)=28
+b,boiler,dhw_comfort_mode,menu=250,,fe,200f,c028,,,BCD,0=off;1=timed;2=always_on
+
+# MSB(ID)=4b
+# Values taken from ysard/ebusd_configuration_chaffoteaux_bridgenet; not 100% validated
+b,boiler,boiler_status,,,fe,2010,c04b,,,UCH,1=standby;2=heating;3=heating hot water;4=water tank;5=circulating;18=heating plate exchanger;23=manual test;24=comfort;51=low water pressure;52=no flame;65=rebooting
+
+# MSB(ID)=47
+b,boiler,external_temperature,menu=835,,fe,200f,7647,,,temperature,32767=0
+
+# MSB(ID)=71 (Zone 1)
+b,boiler,z1_sra_offset,menu=423,,fe,200e,6471,,,temperature
+w,boiler,z1_sra_offset,menu=423,,fe,2020,6471,,,temperature
+b,boiler,z1_fixed_temperature,menu=402,,fe,200e,6571,,,temperature
+w,boiler,z1_fixed_temperature,menu=402,,fe,2020,6571,,,temperature
+
+# MSB(ID)=72 (Zone 2)
+b,boiler,z2_sra_offset,menu=523,,fe,200e,6472,,,temperature
+b,boiler,z2_fixed_temperature,menu=502,,fe,200e,6572,,,temperature
+
+# MSB(ID)=73 (Zone 3)
+b,boiler,z3_sra_offset,menu=623,,fe,200e,6473,,,temperature
+b,boiler,z3_fixed_temperature,menu=602,,fe,200e,6573,,,temperature
+
+# NOTE: The boiler seems to return values for zone 4-6 although it supports only 3 zones.
+# MSB(ID)=74 (Zone 4)
+b,boiler,z4_sra_offset,,,fe,200e,6474,,,temperature
+b,boiler,z4_fixed_temperature,,,fe,200e,6574,,,temperature
+
+# MSB(ID)=75 (Zone 5)
+b,boiler,z5_sra_offset,,,fe,200e,6475,,,temperature
+b,boiler,z5_fixed_temperature,,,fe,200e,6575,,,temperature
+
+# MSB(ID)=76 (Zone 6)
+b,boiler,z6_sra_offset,,,fe,200e,6476,,,temperature
+b,boiler,z6_fixed_temperature,,,fe,200e,6576,,,temperature
+
+# MSB(ID)=81
+b,boiler,z1_heat_temp_range,menu=420,,fe,200f,0081,,,BCD,0=low_temperature;1=high_temperature
