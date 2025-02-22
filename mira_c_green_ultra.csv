@@ -57,3 +57,18 @@ b,boiler,z6_fixed_temperature,,,fe,200e,6576,,,temperature
 # MSB(ID)=81
 b,boiler,z1_heat_temp_range,menu=420,,fe,200f,0081,,,BCD,0=low_temperature;1=high_temperature
 
+# MSB(ID)=d1
+r,boiler,burner_hours_heating,menu=810,,3c,2000,4bd1,,,IGN:1,,,,,,UIN,,hours
+r,boiler,burner_hours_dhw,menu=811,,3c,2000,4cd1,,,IGN:1,,,,,,UIN,,hours
+
+# MSB(ID)=d2
+r,boiler,diverter_cycles,menu=800,,3c,2000,40d2,,,IGN:1,,,,,,UIN
+r,boiler,pump_hours,menu=801,,3c,2000,42d2,,,IGN:1,,,,,,UIN,,hours
+r,boiler,pump_cycles,menu=802,,3c,2000,44d2,,,IGN:1,,,,,,UIN
+r,boiler,fan_cycles,menu=805,,3c,2000,4cd2,,,IGN:1,,,,,,UIN
+
+# MSB(ID)=d8
+r,boiler,ignition_cycles,menu=813,,3c,2000,42d8,,,IGN:1,,,,,,UIN
+
+# MSB(ID)=d9
+r,boiler,boiler_hours,menu=803,,3c,2000,50d9,,,IGN:1,,,,,,UIN,,hours
